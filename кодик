@@ -1,0 +1,22 @@
+num1 = float(input("Введите первое число: "))
+num2 = float(input("Введите второе число: "))
+print("Выберите действие:")
+print("1. Сложение")
+print("2. Вычитание")
+print("3. Умножение")
+print("4. Деление")
+if action == 1:
+    result = num1 + num2
+elif action == 2:
+    result = num1 - num2
+elif action == 3:
+    result = num1 * num2
+elif action == 4:
+    if num2 == 0:
+        result = "Ошибка: деление на ноль"
+    else:
+        result = num1 / num2
+else:
+    result = "Неверный выбор действия"
+
+print("Результат:", result)
